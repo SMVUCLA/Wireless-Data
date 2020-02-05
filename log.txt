@@ -1,0 +1,16 @@
+Log
+
+4 February 2020
+
+* Created a test program for the arduino.
+- Program receives input and prints it back out to the terminal.
+
+* Switched from Arduino Nano to Arduino Mega - Solved the issue of uploading code.
+
+* Understood how Arduino uploads work.
+- At the time of upload, the bluetooth module must be disconnected from the arduino.
+- 3V# and GND may be connected, but TX and RX must be disconnected.
+- Use TX0 and RX0 on the Arduino Mega.
+- After uploading code, connect TX and RX to bluetooth module.
+- Another user should be able to ssh into the arduino (using puTTy for example).
+- User was able to type a character and see it echoed back to their terminal.
