@@ -1,0 +1,21 @@
+/// #include <SoftwareSerial.h> // Wireless Library Needed
+/// SoftwareSerial SMVSerial(0, 1); // RX | TX 
+// Replace 5, 6 with actual RX/TX pin numbers
+
+String testString = "";
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600); // sets baud rate = 9600
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if (Serial.available())
+  {
+    testString = Serial.readString(); // to read data, send "strings" via bluetooth
+  }
+  Serial.println(testString); // reads in our "data"
+  delay(1000);
+  /// while(!SMVSerial.available());
+}
