@@ -31,8 +31,10 @@ void loop() {
     var5 = analogRead(4);
 
     Serial.flush(); // someone lmk what this line does
-
-    Serial.println("var 1: ");
+    
+    
+    // THIS PRINTS OUT ALL SORT OF COOL DATA FROM SENSORS
+    Serial.println("var 1: "); 
     Serial.println(var1);
     Serial.println("var 2: ");
     Serial.println(var2);
