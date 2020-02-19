@@ -1,0 +1,49 @@
+/// #include <SoftwareSerial.h> // Wireless Library Needed
+/// SoftwareSerial SMVSerial(0, 1); // RX | TX 
+// Replace 5, 6 with actual RX/TX pin numbers
+
+int var1, var2, var3, var4, var5;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600); // sets baud rate = 9600
+
+  pinMode(0, INPUT); // example sensor connected to pin #0 
+  pinMode(1, INPUT); // here's another sensor
+  pinMode(2, INPUT); 
+  pinMode(3, INPUT); 
+  pinMode(4, INPUT); // idk let's say there're 5 sensors
+}
+
+void loop() {
+//  // put your main code here, to run repeatedly:
+//  if (Serial.available())
+//  {
+//    testString = Serial.readString(); // to read data, send "strings" via bluetooth
+//  }
+//  Serial.println(testString); // reads in our "data"
+//  delay(1000);
+//  /// while(!SMVSerial.available());
+    var1 = analogRead(0);
+    var2 = analogRead(1);
+    var3 = analogRead(2);
+    var4 = analogRead(3);
+    var5 = analogRead(4);
+
+    Serial.flush(); // someone lmk what this line does
+    
+    
+    // THIS PRINTS OUT ALL SORT OF COOL DATA FROM SENSORS
+    Serial.println("var 1: "); 
+    Serial.println(var1);
+    Serial.println("var 2: ");
+    Serial.println(var2);
+    Serial.println("var 3: ");
+    Serial.println(var3);
+    Serial.println("var 4: ");
+    Serial.println(var4);
+    Serial.println("var 5: ");
+    Serial.println(var5);
+
+    delay(2000);
+}
