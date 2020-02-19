@@ -1,5 +1,24 @@
 Log
 
+18 February 2020
+
+* Note: Use alligator clips with the potentiometer. The wires on the device are too large.
+
+* Was able to to read from a potentiometer.
+- Code is found in the repo.
+- Code is simple, as it does the following:
+    > Sets up an analog pin to read from.
+    > Reads value from specified analog pin.
+    > Prints value from specified analog pin to terminal.
+
+* To connect to bluetooth module:
+- Connect to the module using bluetooth on your device
+- Open your device manager to locate which port(s) are being used
+- Use puTTy to ssh into your bluetooth module. 
+    > You may need to try multiple ports before finding the right one.
+- The computer connected to the module should be the one that sees the code executed.
+- The password as "1234".
+
 4 February 2020
 
 * Created a test program for the arduino.
@@ -9,7 +28,7 @@ Log
 
 * Understood how Arduino uploads work.
 - At the time of upload, the bluetooth module must be disconnected from the arduino.
-- 3V# and GND may be connected, but TX and RX must be disconnected.
+- 3V and GND may be connected, but TX and RX must be disconnected.
 - Use TX0 and RX0 on the Arduino Mega.
 - After uploading code, connect TX and RX to bluetooth module.
 - Another user should be able to ssh into the arduino (using puTTy for example).
