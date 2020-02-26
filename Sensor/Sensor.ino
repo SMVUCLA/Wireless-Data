@@ -1,4 +1,4 @@
-int pin = A0;
+int pin = A0; // Rinse and repeat for every sensor in the Teensy
 int val;
 
 void setup() {
