@@ -2,8 +2,8 @@
 Very important project.
 
 Notes: 
-- Sample Sensor Reading: Code borrowed from online (but the same general idea)
-- Improved upon sample code we made: can type in strings and print stuff to serial
+- Prototype code completed (see Sensor.ino)
+- Successfully tested with a sensor
 
 ## Resources Used
 
